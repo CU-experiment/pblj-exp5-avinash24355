@@ -1,0 +1,19 @@
+import java.util.*;
+
+public class AutoboxingExample {
+    public static void main(String[] args) {
+        List<String> stringNumbers = Arrays.asList("10", "20", "30", "40", "50");
+        List<Integer> numbers = new ArrayList<>();
+        
+        for (String num : stringNumbers) {
+            numbers.add(Integer.parseInt(num));
+        }
+        
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+        
+        System.out.println("The sum is: " + sum);
+    }
+}
